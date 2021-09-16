@@ -13,10 +13,10 @@ Spring Boot Initializer:
   *spring-boot-starter-data-jpa
   
  Create Packages in src/main/java :
-  *Controller > add controller.java
-  *Domain  > add domain.java 
-  *Service > add service.java
-  *Repository > add repository.java
+  *Controller > add Studentcontroller.java
+  *Domain  > add srudent.java 
+  *Service > add Studentservice.java
+  *Repository > add Studentrepository.java
   
   Create static folder in src/main/resources
   static > add index.html
