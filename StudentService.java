@@ -33,5 +33,9 @@ public class StudentService {
     public void delete(long id) {
         repo.deleteById(id);
     }
+	
+	public Student get2(long id) {
+    	return repo.re(id);
+    }
 
 }
