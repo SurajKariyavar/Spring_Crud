@@ -51,6 +51,17 @@ public class StudentController {
          return mav;
          
      }
+ 
+ 
+  @GetMapping("/findId")
+     public String showEditStudentPage2( @RequestParam(value = "num", required = false) int num,Model model) {
+        
+         Student std = service.get2(num);
+         model.addAttribute("student", std);
+         return "new";
+     }
+ 
+ 
      @RequestMapping("/delete/{id}")
      public String deletestudent(@PathVariable(name = "id") int id) {
          service.delete(id);
