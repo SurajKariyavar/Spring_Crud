@@ -10,4 +10,8 @@ import com.example.demo.Domain.Student;
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Long> {
  
+ 
+ @Query(value="select * from Student where id=:n",nativeQuery=true)
+	public Student re(@Param("n") long id);
+ 
 }
